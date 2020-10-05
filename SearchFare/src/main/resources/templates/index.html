@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search Flight</title>
+</head>
+<body>
+<div align = "center">
+	<h1>
+		Search Details
+	</h1>
+	<table>
+	<thead>
+		<tr>
+		<th>Source</th>
+		<th>Destination</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="fare : ${fareList}">
+		<td th:text="$fare"></td> 
+	
+	</tbody>
+	
+	</table>
+</div>
+</body>
+</html>
